@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-500 bg-blue-500 custom:bg-green-500" id="app">
+  <div class="" id="app">
     <AppNavbar/>
     <MarqueeBar/>
     

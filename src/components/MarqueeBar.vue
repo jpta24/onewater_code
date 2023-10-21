@@ -2,7 +2,13 @@
 	<div
 		class="h-[3.5rem] py-[0.4rem] px-0 border-t border-b border-black font-bely font-semibold custom:text-base text-sm text-dark marquee marquee--hover-pause tracking-widest"
 	>
-		<marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="13">
+		<marquee
+			behavior="scroll"
+			direction="left"
+			onmouseover="this.stop();"
+			onmouseout="this.start();"
+			scrollamount="13"
+		>
 			We are looking for photostories
 			<a href="#" style="text-decoration: underline">[Click here]</a> as
 			well as article contribution from researchers and development

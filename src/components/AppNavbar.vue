@@ -7,19 +7,23 @@
 			<div class="block custom:hidden">
 				<HamburgerIcon />
 			</div>
-			<div class="hidden custom:block">Div 2</div>
+			<div class="hidden custom:block">
+				<NavbarList />
+			</div>
 		</div>
 	</nav>
 </template>
 
 <script>
-import HamburgerIcon from '@/assets/icons/Hamburger.vue';
 import OneWaterIcon from '@/assets/icons/OneWater.vue';
+import HamburgerIcon from '@/assets/icons/Hamburger.vue';
+import NavbarList from './NavbarList.vue';
 export default {
 	name: 'AppNavbar',
 	components: {
 		OneWaterIcon,
 		HamburgerIcon,
+		NavbarList,
 	},
 };
 </script>
