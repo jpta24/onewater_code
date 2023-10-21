@@ -5,12 +5,15 @@
 				:changeActivePage="changeActivePage"
 				:activePage="activePage"
                 :toggleBanner="toggleBanner"
+                :isMobileNavbarActive="isMobileNavbarActive"
+                :toggleMobileNavbar="toggleMobileNavbar"
 			/>
 			<MarqueeBar />
 			<PageView :activePage="activePage" />
 		</div>
 
 		<EventsBanner :activePage="activePage" :isBannerActive="isBannerActive" :toggleBanner="toggleBanner"/>
+        <MobileNavbar :isMobileNavbarActive="isMobileNavbarActive" :toggleMobileNavbar="toggleMobileNavbar" :language="language" :setLanguage="setLanguage"/>
 	</div>
 </template>
 
@@ -19,6 +22,7 @@ import AppNavbar from './components/AppNavbar.vue';
 import MarqueeBar from './components/MarqueeBar.vue';
 import PageView from './components/PageView.vue';
 import EventsBanner from './components/EventsBanner.vue';
+import MobileNavbar from './components/MobileNavbar.vue';
 
 export default {
 	name: 'App',
@@ -27,11 +31,14 @@ export default {
 		MarqueeBar,
 		PageView,
 		EventsBanner,
+		MobileNavbar,
 	},
 	data() {
 		return {
 			activePage: 'home',
 			isBannerActive: false,
+            isMobileNavbarActive: false,
+            language:'En'
 		};
 	},
 	methods: {
@@ -41,6 +48,12 @@ export default {
 		toggleBanner() {
 			this.isBannerActive = !this.isBannerActive;
 		},
+        toggleMobileNavbar() {
+			this.isMobileNavbarActive = !this.isMobileNavbarActive;
+		},
+        setLanguage(language) {
+            this.language = language
+        }
 	},
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
 	<section
-		class="flex flex-col z-[2] fixed top-0 right-0 h-screen w-[25rem] px-[1.2rem] py-[2.4rem] items-center text-dark bg-white overflow-auto custom-scroll"
+		class="flex flex-col z-[3] fixed top-0 right-0 h-screen w-[25rem] px-[1.2rem] py-[2.4rem] items-center text-dark bg-white overflow-auto custom-scroll"
 		v-if="isBannerActive"
 	>
 		<CloseIcon :toggleBanner="toggleBanner" />

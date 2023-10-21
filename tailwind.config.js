@@ -17,7 +17,8 @@ module.exports = {
             colors:{
 				'custom-gray': '#E2E2E2',
                 'dark': '#333333',
-                'primary':'rgb(160, 200, 255)'
+                'primary':'rgb(160, 200, 255)',
+                'white':'white'
             }
 		},
 	},

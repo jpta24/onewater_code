@@ -5,10 +5,10 @@
 		>
 			<OneWaterIcon :changeActivePage="changeActivePage"/>
 			<div class="block custom-breakpoint:hidden">
-				<HamburgerIcon />
+				<HamburgerIcon @click="toggleMobileNavbar()"/>
 			</div>
 			<div class="hidden custom-breakpoint:block">
-				<NavbarList :changeActivePage="changeActivePage" :activePage="activePage" :toggleBanner="toggleBanner"/>
+				<NavbarList :changeActivePage="changeActivePage" :activePage="activePage" :toggleBanner="toggleBanner" :language="language"/>
 			</div>
 		</div>
 	</nav>
@@ -20,7 +20,7 @@ import HamburgerIcon from '@/assets/icons/Hamburger.vue';
 import NavbarList from './NavbarList.vue';
 export default {
 	name: 'AppNavbar',
-    props: ['changeActivePage','activePage','toggleBanner'],
+    props: ['changeActivePage','activePage','toggleBanner','toggleMobileNavbar','isMobileNavbarActive','language'],
 	components: {
 		OneWaterIcon,
 		HamburgerIcon,
