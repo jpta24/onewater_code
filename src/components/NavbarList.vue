@@ -20,7 +20,6 @@
 				<span class="hover:text-primary text-xl font-custom-text"
 					>events</span
 				>
-				<UnderlineIcon :activePage="activePage" :elem="'events'" />
 			</li>
 			<li
 				class="justify-start mr-[2.4rem] cursor-pointer relative"

@@ -1,10 +1,10 @@
 <template lang="">
     <div class="justify-center flex">
-        <img class="w-[77%]" src="../assets/img/HomeImg.jpg" alt="Home page in image">
+        <img class="w-[77%]" src="../assets/img/EngageImg.jpg" alt="Engage page in image">
     </div>
 </template>
 <script>
 export default {
-    name:"HomePage"
+    name:"EngagePage"
 }
 </script>
