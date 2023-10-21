@@ -11,11 +11,16 @@
 				<span class="hover:text-primary text-xl font-custom-text"
 					>about</span
 				>
-				<UnderlineIcon :activePage="activePage" :elem="'about'"/>
+				<UnderlineIcon :activePage="activePage" :elem="'about'" />
 			</li>
 			<li
 				class="justify-start mr-[2.4rem] cursor-pointer relative"
-				@click="selectActive('events')"
+				@click="
+					() => {
+						selectActive('events');
+						toggleBanner();
+					}
+				"
 			>
 				<span class="hover:text-primary text-xl font-custom-text"
 					>events</span
@@ -28,7 +33,7 @@
 				<span class="hover:text-primary text-xl font-custom-text"
 					>engage</span
 				>
-				<UnderlineIcon :activePage="activePage" :elem="'engage'"/>
+				<UnderlineIcon :activePage="activePage" :elem="'engage'" />
 			</li>
 			<li
 				class="hover:text-primary justify-start mr-[2.4rem] cursor-pointer"
@@ -46,7 +51,7 @@ import LensIcon from '@/assets/icons/Lens.vue';
 import UnderlineIcon from '@/assets/icons/Underline.vue';
 export default {
 	name: 'NavbarList',
-	props: ['changeActivePage', 'activePage'],
+	props: ['changeActivePage', 'activePage', 'toggleBanner'],
 	components: {
 		UserIcon,
 		LensIcon,

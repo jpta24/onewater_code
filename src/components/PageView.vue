@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div v-if="activePage === 'home'"><HomePage /></div>
+		<div v-if="activePage === 'home' || activePage === 'events'"><HomePage /></div>
 		<div v-if="activePage === 'about'"><AboutPage /></div>
         <div v-if="activePage === 'engage'"><EngagePage /></div>
 	</div>

@@ -1,8 +1,16 @@
 <template>
 	<div class="" id="app">
-		<AppNavbar :changeActivePage="changeActivePage" :activePage="activePage" />
-		<MarqueeBar />
-		<PageView :activePage="activePage" />
+		<div :class="{ 'is-blurred': isBannerActive }">
+			<AppNavbar
+				:changeActivePage="changeActivePage"
+				:activePage="activePage"
+                :toggleBanner="toggleBanner"
+			/>
+			<MarqueeBar />
+			<PageView :activePage="activePage" />
+		</div>
+
+		<EventsBanner :activePage="activePage" :isBannerActive="isBannerActive" :toggleBanner="toggleBanner"/>
 	</div>
 </template>
 
@@ -10,6 +18,7 @@
 import AppNavbar from './components/AppNavbar.vue';
 import MarqueeBar from './components/MarqueeBar.vue';
 import PageView from './components/PageView.vue';
+import EventsBanner from './components/EventsBanner.vue';
 
 export default {
 	name: 'App',
@@ -17,20 +26,29 @@ export default {
 		AppNavbar,
 		MarqueeBar,
 		PageView,
+		EventsBanner,
 	},
 	data() {
 		return {
 			activePage: 'home',
+			isBannerActive: false,
 		};
 	},
 	methods: {
 		changeActivePage(value) {
 			this.activePage = value;
 		},
+		toggleBanner() {
+			this.isBannerActive = !this.isBannerActive;
+		},
 	},
 };
 </script>
 
 <style scoped>
-/* Aquí irán tus estilos generales si los tienes */
+.is-blurred {
+	filter: blur(3px);
+	opacity: 0.5;
+	transition: all 0.5s ease-in-out; 
+}
 </style>
