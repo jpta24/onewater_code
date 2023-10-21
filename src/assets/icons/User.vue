@@ -1,11 +1,8 @@
 <template>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		id="Layer_16"
-		data-name="Layer 16"
 		viewBox="14.47 11.27 49.94 49.94"
 		class="w-[2.8rem] h-[2.8rem]"
-		data-v-06a92572=""
 	>
 		<path
 			fill="currentColor"

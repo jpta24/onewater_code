@@ -3,12 +3,12 @@
 		<div
 			class="text-dark w-full flex items-center justify-between custom-breakpoint:pr-[4.8rem] custom-breakpoint:pl-[4.8rem] custom-breakpoint:py-[1.2rem] py-[1.2rem] pl-[2.4rem] pr-[1.2rem]"
 		>
-			<OneWaterIcon />
+			<OneWaterIcon :changeActivePage="changeActivePage"/>
 			<div class="block custom-breakpoint:hidden">
 				<HamburgerIcon />
 			</div>
 			<div class="hidden custom-breakpoint:block">
-				<NavbarList />
+				<NavbarList :changeActivePage="changeActivePage" :activePage="activePage"/>
 			</div>
 		</div>
 	</nav>
@@ -20,6 +20,7 @@ import HamburgerIcon from '@/assets/icons/Hamburger.vue';
 import NavbarList from './NavbarList.vue';
 export default {
 	name: 'AppNavbar',
+    props: ['changeActivePage','activePage'],
 	components: {
 		OneWaterIcon,
 		HamburgerIcon,

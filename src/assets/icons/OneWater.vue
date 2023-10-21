@@ -1,11 +1,9 @@
 <template>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		id="Layer_11"
-		data-name="Layer 11"
 		viewBox="37.35 30.41 225.73 52.26"
-		class="h-[6rem] custom-breakpoint:w-[20rem] w-[18rem]"
-		data-v-06a92572=""
+		class="h-[6rem] custom-breakpoint:w-[20rem] w-[18rem] cursor-pointer"
+		@click="selectActive('home')"
 	>
 		<path
 			class="cls-1"
@@ -17,5 +15,11 @@
 <script>
 export default {
 	name: 'OneWaterIcon',
+	props: ['changeActivePage'],
+	methods: {
+		selectActive(value) {
+			this.changeActivePage(value);
+		},
+	},
 };
 </script>

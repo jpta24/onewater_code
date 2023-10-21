@@ -5,21 +5,36 @@
 				<LensIcon />
 			</li>
 			<li
-				class="hover:text-primary text-xl font-custom-text justify-start mr-[2.4rem] cursor-pointer"
+				class="justify-start mr-[2.4rem] cursor-pointer relative"
+				@click="selectActive('about')"
 			>
-				about
+				<span class="hover:text-primary text-xl font-custom-text"
+					>about</span
+				>
+				<UnderlineIcon :activePage="activePage" :elem="'about'"/>
 			</li>
 			<li
-				class="hover:text-primary text-xl font-custom-text justify-start mr-[2.4rem] cursor-pointer"
+				class="justify-start mr-[2.4rem] cursor-pointer relative"
+				@click="selectActive('events')"
 			>
-				events
+				<span class="hover:text-primary text-xl font-custom-text"
+					>events</span
+				>
+				<UnderlineIcon :activePage="activePage" :elem="'events'" />
 			</li>
 			<li
-				class="hover:text-primary text-xl font-custom-text justify-start mr-[2.4rem] cursor-pointer"
+				class="justify-start mr-[2.4rem] cursor-pointer relative"
+				@click="selectActive('engage')"
 			>
-				engage
+				<span class="hover:text-primary text-xl font-custom-text"
+					>engage</span
+				>
+				<UnderlineIcon :activePage="activePage" :elem="'engage'"/>
 			</li>
-			<li class="hover:text-primary justify-start mr-[2.4rem] cursor-pointer">
+			<li
+				class="hover:text-primary justify-start mr-[2.4rem] cursor-pointer"
+				@click="selectActive('user')"
+			>
 				<UserIcon />
 			</li>
 		</ul>
@@ -29,11 +44,19 @@
 <script>
 import UserIcon from '@/assets/icons/User.vue';
 import LensIcon from '@/assets/icons/Lens.vue';
+import UnderlineIcon from '@/assets/icons/Underline.vue';
 export default {
 	name: 'NavbarList',
+	props: ['changeActivePage', 'activePage'],
 	components: {
 		UserIcon,
 		LensIcon,
+		UnderlineIcon,
+	},
+	methods: {
+		selectActive(value) {
+			this.changeActivePage(value);
+		},
 	},
 };
 </script>

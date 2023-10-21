@@ -2,11 +2,11 @@
 	<div>
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			id="Layer_14"
-			data-name="Layer 14"
 			viewBox="15.74 30.26 90.53 5.6"
-			class="absolute bottom-[-0.6rem] w-0 left-[-0.6rem] transition-all duration-300 ease-in-out"
-			data-v-06a92572=""
+			:class="{
+				'absolute bottom-[-0.6rem] w-0 left-[-0.6rem] transition-all duration-500 ease-in-out': true,
+				'w-[125%]': activePage === elem,
+			}"
 		>
 			<path
 				fill="currentColor"
@@ -16,8 +16,8 @@
 	</div>
 </template>
 <script>
-
 export default {
-    name:"UnderlineIcon"
+	name: 'UnderlineIcon',
+	props: ['activePage', 'elem'],
 };
 </script>
