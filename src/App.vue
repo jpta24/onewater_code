@@ -13,7 +13,8 @@
 		</div>
 
 		<EventsBanner :activePage="activePage" :isBannerActive="isBannerActive" :toggleBanner="toggleBanner"/>
-        <MobileNavbar :isMobileNavbarActive="isMobileNavbarActive" :toggleMobileNavbar="toggleMobileNavbar" :language="language" :setLanguage="setLanguage"/>
+        <MobileNavbar :isMobileNavbarActive="isMobileNavbarActive" :toggleMobileNavbar="toggleMobileNavbar" :language="language" :setLanguage="setLanguage" :changeActivePage="changeActivePage" 
+                :toggleBanner="toggleBanner"/>
 	</div>
 </template>
 
@@ -44,6 +45,7 @@ export default {
 	methods: {
 		changeActivePage(value) {
 			this.activePage = value;
+            this.isMobileNavbarActive= false;
 		},
 		toggleBanner() {
 			this.isBannerActive = !this.isBannerActive;

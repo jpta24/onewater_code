@@ -13,6 +13,6 @@ export default {
     components: {
 		NavbarList,
 	},
-	props: ['isMobileNavbarActive', 'toggleMobileNavbar','language','setLanguage'],
+	props: ['isMobileNavbarActive', 'toggleMobileNavbar','language','setLanguage',"changeActivePage","toggleBanner"],
 }
 </script>

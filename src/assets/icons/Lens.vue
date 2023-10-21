@@ -21,7 +21,7 @@
 			width="1em"
 			height="1em"
 			viewBox="0 0 256 256"
-			class="w-[2.6rem] h-[2.6rem] group-hover:ml-[1.2rem]"
+			class="w-[2.6rem] h-[2.6rem]"
 		>
 			<path
 				fill="currentColor"

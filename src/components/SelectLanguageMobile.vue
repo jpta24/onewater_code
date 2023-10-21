@@ -20,13 +20,23 @@
 		>
 			<div
 				class="flex items-center justify-start h-[3.6rem] px-[1.5rem] w-[12rem] bg-white"
-                @click="setLanguage('En')"
+				@click="
+					() => {
+						setLanguage('En');
+						isCollapsed = true;
+					}
+				"
 			>
 				English
 			</div>
 			<div
 				class="flex items-center justify-start h-[3.6rem] px-[1.5rem] w-[12rem] bg-white"
-                @click="setLanguage('Fr')"
+				@click="
+					() => {
+						setLanguage('Fr');
+						isCollapsed = true;
+					}
+				"
 			>
 				French
 			</div>
@@ -38,7 +48,7 @@ import ChevronUp from '@/assets/icons/ChevronUp.vue';
 import ChevronDown from '@/assets/icons/ChevronDown.vue';
 export default {
 	name: 'SelectLanguageMobile',
-	props: ['language','setLanguage'],
+	props: ['language', 'setLanguage'],
 	components: {
 		ChevronUp,
 		ChevronDown,
