@@ -5,21 +5,21 @@
 				<LensIcon />
 			</li>
 			<li
-				class="hover:text-primary text-xl font-bely justify-start mr-[2.4rem] cursor-pointer"
+				class="hover:text-primary text-xl font-custom-text justify-start mr-[2.4rem] cursor-pointer"
 			>
 				about
 			</li>
 			<li
-				class="hover:text-primary text-xl font-bely justify-start mr-[2.4rem] cursor-pointer"
+				class="hover:text-primary text-xl font-custom-text justify-start mr-[2.4rem] cursor-pointer"
 			>
 				events
 			</li>
 			<li
-				class="hover:text-primary text-xl font-bely justify-start mr-[2.4rem] cursor-pointer"
+				class="hover:text-primary text-xl font-custom-text justify-start mr-[2.4rem] cursor-pointer"
 			>
 				engage
 			</li>
-			<li class="justify-start mr-[2.4rem] cursor-pointer">
+			<li class="hover:text-primary justify-start mr-[2.4rem] cursor-pointer">
 				<UserIcon />
 			</li>
 		</ul>

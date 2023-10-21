@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="h-[3.5rem] py-[0.4rem] px-0 border-t border-b border-black font-bely font-semibold custom:text-base text-sm text-dark marquee marquee--hover-pause tracking-widest"
+		class="h-[3.5rem] py-[0.4rem] px-0 border-t border-b border-black font-custom-text font-semibold custom-breakpoint:text-base text-sm text-dark marquee marquee--hover-pause tracking-widest"
 	>
 		<marquee
 			behavior="scroll"

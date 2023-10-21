@@ -1,13 +1,13 @@
 <template>
 	<nav class="z-20 relative md:overflow-hidden">
 		<div
-			class="text-dark w-full flex items-center justify-between custom:pr-[4.8rem] custom:pl-[4.8rem] custom:py-[1.2rem] py-[1.2rem] pl-[2.4rem] pr-[1.2rem]"
+			class="text-dark w-full flex items-center justify-between custom-breakpoint:pr-[4.8rem] custom-breakpoint:pl-[4.8rem] custom-breakpoint:py-[1.2rem] py-[1.2rem] pl-[2.4rem] pr-[1.2rem]"
 		>
 			<OneWaterIcon />
-			<div class="block custom:hidden">
+			<div class="block custom-breakpoint:hidden">
 				<HamburgerIcon />
 			</div>
-			<div class="hidden custom:block">
+			<div class="hidden custom-breakpoint:block">
 				<NavbarList />
 			</div>
 		</div>

@@ -2,10 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Poppins:wght@400&display=swap');
+
 html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    box-sizing: border-box;
-    font-family: bely,greycliff-cf,Commissioner,Roboto;
-    font-size: 10px;
+	font-size: 10px;
 }
