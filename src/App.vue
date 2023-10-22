@@ -9,7 +9,7 @@
                 :toggleMobileNavbar="toggleMobileNavbar"
 			/>
 			<MarqueeBar />
-			<PageView :activePage="activePage" />
+			<PageView :activePage="activePage" :language="language" :setLanguage="setLanguage"/>
 		</div>
 
 		<EventsBanner :activePage="activePage" :isBannerActive="isBannerActive" :toggleBanner="toggleBanner"/>

@@ -19,7 +19,7 @@
 			:class="[isCollapsed ? 'hidden' : 'block']"
 		>
 			<div
-				class="flex items-center justify-start h-[3.6rem] px-[1.5rem] w-[12rem] bg-white"
+				class="flex items-center justify-start h-[3.6rem] px-[1.5rem] w-[12rem] bg-white hover:bg-gray-200 cursor-pointer"
 				@click="
 					() => {
 						setLanguage('En');
@@ -30,7 +30,7 @@
 				English
 			</div>
 			<div
-				class="flex items-center justify-start h-[3.6rem] px-[1.5rem] w-[12rem] bg-white"
+				class="flex items-center justify-start h-[3.6rem] px-[1.5rem] w-[12rem] bg-white hover:bg-gray-200 cursor-pointer"
 				@click="
 					() => {
 						setLanguage('Fr');
