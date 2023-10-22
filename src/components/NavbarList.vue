@@ -60,7 +60,7 @@
 				class="flex items-center w-[12rem] custom-breakpoint:mt-0 mt-[2.4rem] cursor-pointer relative custom-breakpoint:w-[100%]"
 				@click="selectActive('profile')"
 			>
-				<UserIcon class="mr-[2.4rem]" />
+				<UserIcon class="mr-[2.4rem] hover:text-primary" />
 				<span
 					class="hover:text-primary text-xl font-custom-text block custom-breakpoint:hidden"
 					>profile</span
