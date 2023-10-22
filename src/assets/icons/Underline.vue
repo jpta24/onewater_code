@@ -19,8 +19,5 @@
 export default {
 	name: 'UnderlineIcon',
 	props: ['activePage', 'elem'],
-	mounted() {
-    console.log('El componente se ha renderizado');
-  }
 };
 </script>

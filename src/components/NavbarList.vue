@@ -58,7 +58,7 @@
 			</li>
 			<li
 				class="flex items-center w-[12rem] custom-breakpoint:mt-0 mt-[2.4rem] cursor-pointer relative custom-breakpoint:w-[100%]"
-				@click="selectActive('user')"
+				@click="selectActive('profile')"
 			>
 				<UserIcon class="mr-[2.4rem]" />
 				<span
